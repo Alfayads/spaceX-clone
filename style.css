@@ -1,0 +1,174 @@
+header {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 167px;
+}
+
+.header .left ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    width: 753.109px;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.header .left ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .right {
+    display: flex;
+    flex-grow: 0;
+    width: 140px;
+    justify-content: space-evenly;
+    color: #fff;
+    align-items: center;
+}
+
+.section1 {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .hero-section {
+    width: 70%;
+    height: 64%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* .section1 .hero-section button {
+    height: 50px;
+    width: 160px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    border: 2px solid #fff;
+    margin-top: 30px;
+} */
+
+.section1 .hero-section h1 {
+    color: #fff;
+    letter-spacing: 1px;
+    width: 468px;
+    font-size: 48px;
+}
+
+
+/* animated navbar border */
+
+.animation {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.animation::before,
+.animation::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.5s ease;
+}
+
+.animation::after {
+    right: 0;
+    width: 0;
+}
+
+.animation:hover::before {
+    width: 100%;
+}
+
+.animation:hover::after {
+    width: 100%;
+}
+
+.hero-section p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* button animation */
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 50px;
+    width: 160px;
+    color: #fff;
+    background: transparent;
+    font-size: 14px;
+    border: 2px solid #fff;
+    margin-top: 30px;
+    transition: all 0.8s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+footer{
+    height: 90px;
+    width: 1903px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+
+.footer p{
+    font-size: 12px;
+    font-weight: 200;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.footer p:hover{
+    opacity: 0.7;
+}
